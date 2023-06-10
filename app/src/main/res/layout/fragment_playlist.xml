@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".fragments.PlaylistFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imgIcon"
+            android:src="@drawable/ic_album"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textSize="36dp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/imgIcon"
+            android:text="Playlist"/>
+
+        <ImageView
+            android:id="@+id/ivAdd"
+            android:layout_width="45dp"
+            android:layout_marginTop="8dp"
+            android:layout_height="45dp"
+            android:layout_below="@id/imgIcon"
+            android:src="@drawable/ic_add" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/imgIcon"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="18dp"
+            android:layout_toEndOf="@id/ivAdd"
+            android:text="Add new playlist"
+            android:textColor="@color/black"
+            android:textSize="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvPlaylist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ivAdd"
+            android:layout_marginTop="16dp" />
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingTop="12dp"
+        android:background="@color/orange"
+        android:textColor="@color/white"
+        android:paddingBottom="12dp"
+        android:textStyle="bold"
+        android:textSize="24dp"
+        android:text="Change Information"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        android:textColorHint="@color/gray"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Name"
+            android:textColor="@color/gray"
+            android:id="@+id/tietName"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        app:endIconTint="@color/gray"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        app:endIconMode="password_toggle"
+        android:textColorHint="@color/gray"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:hint="Old Password"
+            android:textColor="@color/gray"
+            android:inputType="textPassword"
+            android:id="@+id/tietOldPass"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="8dp"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/gray"
+        android:layout_marginRight="8dp"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        android:textColorHint="@color/gray"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:textColor="@color/gray"
+            android:hint="New Password"
+            android:inputType="textPassword"
+            android:id="@+id/tietNewPass"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/gray"
+        android:layout_marginLeft="8dp"
+        app:boxStrokeColor="@color/orange"
+        app:hintTextColor="@color/orange"
+        android:textColorHint="@color/gray"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:lines="1"
+            android:textColor="@color/gray"
+            android:hint="Retype New Password"
+            android:inputType="textPassword"
+            android:id="@+id/tietRePass"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/orange"
+            android:text="Save"
+            android:id="@+id/btnSave"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:backgroundTint="@color/orange"
+            android:text="Cancel"
+            android:id="@+id/btnCancel"
+            android:layout_marginLeft="8dp"
+            android:textColor="@color/white"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

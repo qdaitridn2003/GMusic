@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_color"
+    tools:context=".activities.LoginActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlHaveConnect"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textSize="48dp"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold"
+            android:id="@+id/txtSignIn"
+            android:layout_centerInParent="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="48dp"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="12dp"
+            android:hint="Email"
+            android:id="@+id/tilEmail"
+            app:hintTextColor="@color/white"
+            app:boxStrokeWidthFocused="0dp"
+            app:boxStrokeWidth="0dp"
+            app:startIconDrawable="@drawable/ic_email"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/white_border"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtSignIn">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputEmail"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:inputType="textEmailAddress"
+                android:lines="1"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            app:boxStrokeWidth="0dp"
+            app:hintTextColor="@color/white"
+            android:hint="Password"
+            app:boxStrokeWidthFocused="0dp"
+            app:endIconMode="password_toggle"
+            android:id="@+id/tilPassword"
+            app:startIconDrawable="@drawable/ic_password"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/white_border"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilEmail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/inputPassword"
+                android:layout_width="match_parent"
+                android:inputType="textPassword"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:lines="1"
+                android:textColor="@color/white" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tilPassword"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:buttonTint="@color/white"
+            android:id="@+id/ckbRemember"
+            android:letterSpacing="0.075"
+            android:text="Remember Me ?"
+            android:layout_marginLeft="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/orange"
+            android:text="Login"
+            android:id="@+id/btnLogin"
+            android:layout_below="@id/ckbRemember"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btnLogin"
+            android:layout_marginTop="16dp"
+            android:id="@+id/txtMore"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="or login with"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/gmail_icon"
+            android:layout_below="@id/txtMore"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/ivGmail"
+            android:layout_marginLeft="115dp"
+            android:layout_height="50dp"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/facebook_icon"
+            android:layout_below="@id/txtMore"
+            android:layout_marginTop="16dp"
+            android:id="@+id/ivFacebook"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="115dp"
+            android:layout_height="50dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rlNoConnect"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivIcon1"
+            android:layout_width="135dp"
+            android:layout_height="135dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/large_icon_app" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ivIcon1"
+            android:id="@+id/tvText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:letterSpacing="0.075"
+            android:text="No Network Connection"
+            android:textColor="@color/gray"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:src="@drawable/ic_no_network"
+            android:layout_below="@id/tvText"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="8dp"
+            android:id="@+id/ivNoNetWork"
+            android:layout_height="50dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_below="@id/ivNoNetWork"
+            android:layout_marginTop="8dp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/orange"
+            android:layout_centerInParent="true"
+            android:text="Retry"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

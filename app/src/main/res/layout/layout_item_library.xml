@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="8dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            android:src="@drawable/large_icon_app" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_toEndOf="@id/imgIcon"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:id="@+id/tvTrackName"
+            android:textColor="@color/black"
+            android:layout_marginTop="12dp"
+            android:textSize="18dp"
+            android:text="Name"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Author"
+            android:textSize="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tvTrackAuthor"
+            android:textColor="@color/gray"
+            android:maxLength="24"
+            android:layout_toEndOf="@id/imgIcon"
+            android:layout_below="@id/tvTrackName"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_centerInParent="true"
+            android:layout_alignParentRight="true"
+            android:id="@+id/ivAddToList"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/ic_addtolist"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

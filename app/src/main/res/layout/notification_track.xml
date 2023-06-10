@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/rlNotification"
+    android:background="@color/transparent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgSmallIcon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/small_icon_app" />
+
+    <TextView
+        android:id="@+id/txtAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10.5dp"
+        android:layout_toEndOf="@id/imgSmallIcon"
+        android:gravity="center"
+        android:layout_marginLeft="-2dp"
+        android:text="GMusic"
+        android:textColor="@color/gray"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/imgIcon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtAppName"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/large_icon_app" />
+
+    <TextView
+        android:id="@+id/tvTrackName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtAppName"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:padding="2dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Name"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTrackAuthor"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTrackName"
+        android:layout_marginLeft="8dp"
+        android:padding="2dp"
+        android:layout_marginBottom="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="Author"
+        android:textColor="@color/white"
+        android:textSize="14dp" />
+
+    <ImageView
+        android:id="@+id/ivNextTrack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_toStartOf="@id/imgIcon"
+        android:src="@drawable/ic_next" />
+
+    <ImageView
+        android:layout_width="32dp"
+        android:src="@drawable/ic_pause"
+        android:id="@+id/ivPlayOrPause"
+        android:layout_marginRight="8dp"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@id/ivNextTrack"
+        android:layout_height="32dp"/>
+
+    <ImageView
+        android:id="@+id/ivPrevTrack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="8dp"
+        android:layout_toStartOf="@id/ivPlayOrPause"
+        android:src="@drawable/ic_prev" />
+</RelativeLayout>

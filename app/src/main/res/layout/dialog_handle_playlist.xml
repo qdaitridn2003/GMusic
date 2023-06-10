@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="@color/orange"
+        android:text="Handle Playlist"
+        android:id="@+id/txtTitle"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:padding="8dp"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/tilInput"
+        android:layout_below="@id/txtTitle"
+        app:hintTextColor="@color/orange"
+        android:textColorHint="@color/orange"
+        android:layout_margin="8dp"
+        app:boxStrokeColor="@color/orange"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:hint="Playlist Name"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:id="@+id/inputPlaylistName"
+            android:textColorHint="@color/orange"
+            android:layout_height="match_parent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tilInput"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/orange"
+        android:minWidth="150dp"
+        android:text="Save"
+        android:textColor="@color/white" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:backgroundTint="@color/orange"
+        android:textColor="@color/white"
+        android:layout_marginTop="8dp"
+        android:text="Cancel"
+        android:id="@+id/btnCancel"
+        android:minWidth="150dp"
+        android:layout_marginRight="8dp"
+        android:layout_below="@id/tilInput"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

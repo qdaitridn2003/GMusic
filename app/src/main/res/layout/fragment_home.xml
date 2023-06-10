@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:id="@+id/imgIcon"
+            android:src="@drawable/ic_explore"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textSize="36dp"
+            android:textColor="@color/gray"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@id/imgIcon"
+            android:text="Exploration"/>
+
+        <TextView
+            android:id="@+id/txtTrending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgIcon"
+            android:layout_marginTop="16dp"
+            android:text="Trending"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvViewAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgIcon"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/txtTrending"
+            android:text="View all >>"
+            android:textAlignment="textEnd"
+            android:textColor="@color/gray"
+            android:textSize="18dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTrending"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTrending"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtInstrumental"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvTrending"
+            android:layout_marginTop="16dp"
+            android:text="Instrumental"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvViewAll2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvTrending"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/txtTrending"
+            android:text="View all >>"
+            android:textAlignment="textEnd"
+            android:textColor="@color/gray"
+            android:textSize="18dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvInstrumental"
+            android:layout_width="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtInstrumental"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtLofi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvInstrumental"
+            android:layout_marginTop="16dp"
+            android:text="Lofi Chill"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvViewAll3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvInstrumental"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/txtTrending"
+            android:text="View all >>"
+            android:textAlignment="textEnd"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvLofi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_below="@id/txtLofi"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtVietnam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvLofi"
+            android:layout_marginTop="16dp"
+            android:text="Asia"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvViewAll4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvLofi"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/txtTrending"
+            android:text="View all >>"
+            android:textAlignment="textEnd"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvAsia"
+            android:layout_width="match_parent"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtVietnam"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="US UK"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:id="@+id/txtUsUk"
+            android:layout_marginTop="16dp"
+            android:textSize="24dp"
+            android:layout_below="@id/rvAsia"/>
+
+        <TextView
+            android:id="@+id/tvViewAll5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvAsia"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@id/txtTrending"
+            android:text="View all >>"
+            android:textAlignment="textEnd"
+            android:textColor="@color/gray"
+            android:textSize="18dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUsUk"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtUsUk"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/txtTop5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rvUsUk"
+            android:layout_marginTop="16dp"
+            android:text="Top 5 The Most Saved Track"
+            android:textColor="@color/orange"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvTop5"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:nestedScrollingEnabled="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtTop5"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_below="@id/rvTop5"
+            android:text=""
+            android:layout_height="105dp"/>
+
+    </RelativeLayout>
+
+</ScrollView>
